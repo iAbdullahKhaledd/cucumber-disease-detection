@@ -6,14 +6,14 @@ This project is a collaborative effort to build an end-to-end computer vision pi
 
 This project was brought to life by:
 
-*   **[Abdullah Khaled]** ([@iAbdullahKhaledd](https://github.com/iAbdullahKhaledd))
+*   **Abdullah Khaled** ([@iAbdullahKhaledd](https://github.com/iAbdullahKhaledd))
 
 *   **Yousef Kamel** ([@YousefKamell](https://github.com/YousefKamell))
 
 ## Features
 
 -   **Model:** YOLOv8n
--   **Dataset:** A custom-built dataset sourced and annotated on Roboflow, containing 8 classes of cucumber health status (e.g., Anthracnose, Powdery Mildew, Healthy).
+-   **Dataset:** A custom-built dataset sourced and annotated on Roboflow, containing 8 classes of cucumber health status (e.g., Anthracnose, Powdery Mildew, Healthy).[https://universe.roboflow.com/cucumber-bdhva/cucmber-healthy-diseases]
 -   **End-to-End Pipeline:** Includes scripts for data downloading, training, and evaluation.
 -   **Structured Code:** The project is organized into a `src` directory with classes and utility functions for clean, reusable code.
 -   **Dependency Management:** Uses a `requirements.txt` file for easy environment setup.
@@ -76,3 +76,27 @@ The model was trained for 60 epochs and achieved the following performance on th
 -   **mAP@0.5:** 0.939
 -   **Precision:** 0.937
 -   **Recall:** 0.904
+
+### Training Performance Graphs
+
+The following graphs show the model's performance improving over the training epochs. The loss (box_loss, cls_loss, dfl_loss) decreases while the performance metrics (Precision, Recall, mAP) increase, indicating successful learning.
+
+![Training Results](https://github.com/user-attachments/assets/c7d9ffa0-0e41-4d76-9531-6d6022b24e70)
+
+### Confusion Matrix
+
+The normalized confusion matrix below shows the model's performance for each class. It helps visualize where the model excels and where it might be confused. The strong diagonal line indicates high accuracy across all classes.
+
+![Normalized Confusion Matrix](https://github.com/user-attachments/assets/30cdbcdd-7f77-416a-83cd-d7acbd61b580)
+
+### Precision-Recall Curve
+
+The PR curve shows the tradeoff between precision and recall for different thresholds. A high area under the curve (AUC) represents both high recall and high precision, which is a sign of a high-accuracy model.
+
+![PR Curve](https://github.com/user-attachments/assets/f0f59eeb-47ce-4649-9fe7-ae5606a95f3d)
+
+### Sample Model Predictions
+
+Here is an example of the model's predictions on a batch of validation images, showing its ability to detect different diseases in real-world scenarios.
+
+![Sample Predictions](https://github.com/user-attachments/assets/12de729d-99a8-45dc-b427-d2f73234f67c)
