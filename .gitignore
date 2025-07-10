@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Environment
+.env
+venv/
+*.env
+
+# Data and Models (these are usually too large for Git)
+/data/
+/My-First-Project-1/
+*.pt
+*.onnx
+*.zip
+*.log
+
+# Training Output
+/runs/
+/content/
+/yolov8_train_opt/
+/yolov8_train_opt2/
