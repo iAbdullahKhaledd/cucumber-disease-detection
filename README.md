@@ -10,6 +10,8 @@ This project was brought to life by:
 
 *   **Yousef Kamel** ([@YousefKamell](https://github.com/YousefKamell))
 
+*   **Moaz Nasser** ([@Moaznasser](https://github.com/Moaznasser))
+
 ## Features
 
 -   **Model:** YOLOv8n
